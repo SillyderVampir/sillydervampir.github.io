@@ -58,6 +58,7 @@
 
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
 }
 #projects{
     margin: auto;
@@ -71,7 +72,7 @@
     font-weight: 100;
 
     width: 600px;
-    height: 100px;
+    height: 400px;
 
     margin: auto;
     margin-top: 40px;
@@ -79,6 +80,23 @@
 
     display: inline-block;
     position: relative;
+}
+.projectPicture{
+    height: 300px;
+    border: solid black;
+    background-size: cover;
+}
+#ppKnucklebones{
+    background-image: url("media/projectpicture knucklebones.png");
+}
+#ppPWS{
+    background-image: url("media/projectpicture PWS.png");
+}
+#ppAxolotl{
+    background-image: url("media/projectpicure axolotl.png");
+}
+#ppMusic{
+    background-image: url("media/projectpicture music.png");
 }
 .projectBox{
     width: 400px;
@@ -93,7 +111,7 @@
 
     padding-top: 20px;
 
-    opacity: 0.6;
+    opacity: 0.8;
 }
 .projectBox:hover{
     border: solid #782254;
@@ -104,7 +122,7 @@
     background-color: #a2316f;
     transform: translateY(2px);
     transition-duration: 0.2s;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 .projectLink{
     font-family: Montserrat;
@@ -114,7 +132,6 @@
     text-decoration: none;
 
     padding-top: 20px;
-
 }
 a:link.projectLink{
     color: #F5D3E3;
@@ -131,6 +148,8 @@ a:active.projectLink{
     transition-duration: 0.2s;
 }
 
+
+/* in case the site is under construction */
 #construction{
     width:100%;
     position: sticky;
@@ -138,10 +157,8 @@ a:active.projectLink{
 }
 #constructionBandUp{
     height: 40px;
-
     border: black solid;
     border-bottom: none;
-
     background-image: repeating-linear-gradient(
         135deg,
         #ffff00,
@@ -149,35 +166,26 @@ a:active.projectLink{
         #000000 28px,
         #000000 56px
     );
-
     margin: 0;
     margin-top: 40px;
-    
 }
 #constructionText{
     background-color: #ffff00;
-
     border-left: black solid;
     border-right: black solid;
-
     height: 40px;
-
     color: #000000;
     font-family: Montserrat;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-
-    margin: 0;
-
-    
+    margin: 0; 
 }
 #constructionBandDown{
     height: 40px;
 
     border: black solid;
     border-top: none;
-
     background-image: repeating-linear-gradient(
         135deg,
         #ffff00,
@@ -185,7 +193,6 @@ a:active.projectLink{
         #000000 28px,
         #000000 56px
     );
-
     margin: 0;
     margin-bottom: 40px;
 }
