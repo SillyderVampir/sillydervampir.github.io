@@ -6,13 +6,12 @@
 
     font-family: Cormorant, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #F5D3E3;
+    font-weight: 300;
 
     min-height: 1080px;
 
     margin: 0;
     padding: 0;
-
-    padding-bottom: 2000px;
 }
 
 .title{
@@ -84,6 +83,7 @@
 .projectPicture{
     height: 300px;
     border: solid black;
+    border-radius: 20px;
     background-size: cover;
 }
 #ppKnucklebones{
@@ -97,6 +97,12 @@
 }
 #ppMusic{
     background-image: url("media/projectpicture music.png");
+}
+#ppWebsite{
+    background-image: url("media/projectpicture website.png");
+}
+#ppPlanets{
+    background-image: url("media/projectpicture planets");
 }
 .projectBox{
     width: 400px;
@@ -146,53 +152,4 @@ a:active.projectLink{
     color: #EEFBF5;
     transform: translateY(2px);
     transition-duration: 0.2s;
-}
-
-
-/* in case the site is under construction */
-#construction{
-    width:100%;
-    position: sticky;
-    top: 0;
-}
-#constructionBandUp{
-    height: 40px;
-    border: black solid;
-    border-bottom: none;
-    background-image: repeating-linear-gradient(
-        135deg,
-        #ffff00,
-        #ffff00 28px,
-        #000000 28px,
-        #000000 56px
-    );
-    margin: 0;
-    margin-top: 40px;
-}
-#constructionText{
-    background-color: #ffff00;
-    border-left: black solid;
-    border-right: black solid;
-    height: 40px;
-    color: #000000;
-    font-family: Montserrat;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    margin: 0; 
-}
-#constructionBandDown{
-    height: 40px;
-
-    border: black solid;
-    border-top: none;
-    background-image: repeating-linear-gradient(
-        135deg,
-        #ffff00,
-        #ffff00 28px,
-        #000000 28px,
-        #000000 56px
-    );
-    margin: 0;
-    margin-bottom: 40px;
 }
