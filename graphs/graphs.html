@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Graphs Simulator</title>
+
+<link rel="stylesheet" type="text/css" href="graphs.css">
+<!--
+<link rel="icon" type="image" href="placeholder.png">
+-->
+
+</head>
+<body id="body">
+    <!-- settings window -->
+    <div id="selectPanel">
+        <div id="selectHeader"></div>
+        <div class="selector" id="selector1"></div>
+        <div class="selector" id="selector2"></div>
+        <div class="selector" id="selector3"></div>
+        <div class="selector" id="selector4"></div>
+        <div class="selector" id="selector5">Path</div>
+        <div class="deletor" id="deletor1">Lines</div>
+        <div class="deletor" id="deleter2">Graph</div>
+    </div>
+
+    <!-- info bar -->
+    <div id="infoBar">
+        <div id="infoHeader"></div>
+        <div id="graphNotation">G = (V,E)</div>
+        <div id="pointInfo">Info</div>
+        <div class="property" id="propertyRegular">Regular</div>
+        <div class="property" id="propertyComplete">Complete</div>
+        <div class="property" id="propertyBipartite">Bipartite</div>
+        <div class="property" id="propertyCompleteBipartite">Complete Bipartite</div>
+        <div class="property" id="propertyConnected">Connected</div>
+        <div class="property" id="propertyForest">Forest</div>
+        <div class="property" id="propertyTree">Tree</div>
+        <div class="property" id="propertyEuler">Euler Graph</div>
+        <div class="property" id="propertyHamilton">Hamilton Graph</div>
+    </div>
+
+    <!-- the space -->
+    <canvas id="space"></canvas>
+
+    <!-- javascript code -->
+    <script type="text/javascript" src="graphs.js"></script>
+</body>
+</html>

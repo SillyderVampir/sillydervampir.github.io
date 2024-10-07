@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext");
+
+#body{
+    margin:none;
+    padding:none;
+
+    overflow: hidden;
+
+    font-family: Cormorant, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #F5D3E3;
+    font-weight: 300;
+
+    user-select: none;
+}
+
+/* for the space */
+#space{
+    background-color: #140922;
+    background-size: contain;
+
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+/* for the settings window*/
+#selectPanel{
+    position: fixed;
+
+    background-color: #3c1b66;
+
+    margin-left: -8px;
+    margin-top: -8px;
+    
+    width: 100px;
+    min-height: 0px;
+    
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: #140922;
+
+    transition-duration: 0.3s;
+}
+#selectHeader{
+    background-color: #3c1b66;
+    border-radius: 8px;
+    height: 20px;
+    margin-bottom: 10px;
+    transition-duration: 0.3s;
+}
+.selector{
+    width: 60px;
+    height: 60px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: #2d8272;
+
+    text-align: center;
+
+    display: grid;
+}
+.deletor{
+    width: 60px;
+    height: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: #c03f56;
+
+    text-align: center;
+
+    display: grid;
+}
+
+#selector1{
+    background-image: url(graphsMedia/selector_move_transparent.png);
+}
+#selector2{
+    background-image: url(graphsMedia/selector_point_transparent.png);
+}
+#selector3{
+    background-image: url(graphsMedia/selector_line_transparent.png);
+}
+#selector4{
+    background-image: url(graphsMedia/selector_circle_transparent.png);
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+}
+
+/* for the information bar */
+#infoBar{
+    position: fixed;
+
+    background-color: #3c1b66;
+
+    margin-left: -8px;
+    bottom: 0px;
+
+    padding-right: 10px;
+
+    min-width: 0px;
+    height: 80px;
+
+
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: #140922;
+
+    transition-duration: 0.3s;
+}
+#infoHeader{
+    background-color: #3c1b66;
+    border-radius: 8px;
+
+    width: 20px;
+    height: 80px;
+
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    transition-duration: 0.3s;
+    
+    float:left;
+}
+#graphNotation{
+    min-width: 0px;
+    height: 60px;
+
+    margin-top: 10px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: #29628b;
+
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    float: left;
+}
+#pointInfo{
+    width: 60px;
+    height: 60px;
+
+    margin-top: 10px;
+
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: #29628b;
+
+    text-align: center;
+
+    display: grid;
+
+    float: left;
+}
+.property{
+    width: 60px;
+    height: 60px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: #29628b;
+
+    text-align: center;
+
+    display: grid;
+
+    float: left;
+}
