@@ -28,8 +28,8 @@ const opponentOptions = ["player","random","copycat","match","remove","re-match"
 
 var playerRowIndex = "temp";
 
-// - Functions
-// Setup for the game
+// # functions
+// setup for the game
 async function gameInit(currentPlayer){
     running = true;
 
@@ -47,7 +47,7 @@ function playerSwitch(currentPlayer){
     return currentPlayer;
 }
 
-// Roll and display dice
+// roll and display dice
 async function rollDie(currentPlayer){
     running = false;
 
@@ -126,7 +126,7 @@ function removeDice(roll,row){
 }
 // update the shown dice
 function updateDiceVisuals(){
-    // Empty the shown dice
+    // empty the shown dice
     let showDice = document.getElementById(`rollAreaP${rowPlayer}`);
     showDice.src = "knucklebonesMedia/dice_empty.png";
 
