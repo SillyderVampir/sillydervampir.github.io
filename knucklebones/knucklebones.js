@@ -65,7 +65,7 @@ async function rollDie(currentPlayer){
 
     // let the dice "roll" for a bit
     for (r = 0; r < 10; r++){
-        delay = Math.max(500 / (10 - r), 100);
+        delay = 500/(10-r) + 50
         await wait(delay); // variable delay
 
         roll = Math.floor(Math.random() * 5) + 1;
