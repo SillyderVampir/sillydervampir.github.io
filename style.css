@@ -98,8 +98,17 @@
 #ppWebsite{
     background-image: url("media/projectpicture website.png");
 }
+#ppTycoon{
+    background-image: url("media/projectpicture\ development.png");
+}
 #ppGraphs{
-    background-image: url(media/projectpicture\ development.png);
+    background-image: url("media/projectpicture\ development.png");
+}
+#ppMinesweeper{
+    background-image: url("media/projectpicture\ development.png");
+}
+#ppPlanetSim{
+    background-image: url("media/projectpicture\ development.png");
 }
 
 .projectBox{

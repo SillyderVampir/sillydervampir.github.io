@@ -422,7 +422,7 @@ function formCircle(){
 function showPath(){
     // find a close point
     pointSelect = closePoint(mousex,mousey);
-
+    
     if (pointSelect === -1) { return; };
     
     // remove the point to the path
@@ -433,6 +433,8 @@ function showPath(){
     } else {
         selectedPoints.push(pointSelect);
     };
+
+    console.log(selectedPoints)
 
     // find the path with the given points
     if (selectedPoints.length >= 2){
@@ -469,6 +471,24 @@ function showPath(){
                 };
             };
             e[2] = highlight;
+        };
+    } else {
+        Vcount = V.length;
+        for (let i=0; i<Vcount; i++){
+            let v = V[i];
+            vIndex = v[2];
+
+            if (selectedPoints.includes(vIndex)){
+                v[3] = true;
+            } else {
+                v[3] = false;
+            };
+        };
+
+        Ecount = E.length;
+        for (let i=0; i<Ecount; i++){
+            let e = E[i];
+            e[2] = false;
         };
     };
 

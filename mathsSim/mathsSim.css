@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext");
+
+#body{
+    margin:none;
+    padding:none;
+
+    overflow: hidden;
+
+    font-family: Cormorant, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f5d3e3;
+    font-weight: 300;
+
+    user-select: none;
+}
+
+/* for the plane */
+#plane{
+    background-color: #e3d5f4;
+    background-size: contain;
+
+    margin-left: -8px;
+    margin-top: -8px;
+}

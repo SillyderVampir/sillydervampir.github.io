@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Tycoon</title>
+
+<link rel="stylesheet" type="text/css" href="tycoon.css">
+<!--
+<link rel="icon" type="image" href="knucklebonesMedia/player_1.png">
+-->
+
+</head>
+<body id="body" ondragstart="return false;" ondrop="return false;">
+    <!-- title text -->
+    <h1 id="title">Tycoon</h1>
+
+    <!-- the start screen -->
+    <div id="startScreenContainer">
+        <div id="startScreen">
+            <button id="startButton">Start the Game</button>
+        </div>
+    </div>
+
+    <!-- result screen -->
+    <div id="resultScreenContainer">
+        <div id="resultScreen">
+            <button id="restartButton">Play Again</button>
+        </div>
+    </div>
+
+    <!-- game area -->
+    <div id="field">
+        <div id="space0" class="space">
+            Space0
+        </div>
+        <div id="space1" class="space">
+
+        </div>
+        <div id="space2" class="space">
+            Space2
+        </div>
+        <div id="space3" class="space">
+
+        </div>
+        <!-- card pile -->
+        <div id="space4" class="space">
+
+        </div>
+        <!-- /card pile -->
+        <div id="space5" class="space">
+
+        </div>
+        <div id="space6" class="space">
+            <div id="ppButtonContainer">
+                <button id="playButton" class="ppButton" onclick="play()">Play</button>
+                <button id="passButton" class="ppButton" onclick="pass()">Pass</button>
+            </div>
+        </div>
+        <div id="space7" class="space">
+
+        </div>
+        <div id="space8" class="space">
+            <div id="ppButtonContainer">
+                <button id="playButton" class="ppButton" onclick="play()">Play</button>
+                <button id="passButton" class="ppButton" onclick="pass()">Pass</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="tycoon.js"></script>
+</body>
+</html>

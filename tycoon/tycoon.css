@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* for the whole thing */
+body{
+    text-align: center;
+    color: #dee4e8;
+    font-family: "Arsenal";
+    font-size: 40px;
+    font-weight: 700;
+
+    background-color: #003737;
+    background-size: cover;
+
+    user-select: none;
+    overflow: hidden;
+
+    width: 1920px;
+    height: 1080px;
+
+    z-index: 0;
+}
+
+#title{
+    height: 100px;
+    margin: 20px;
+    margin-top: -20px;
+}
+
+/* the playing field */
+#field{
+    background-size: cover;
+
+    margin: auto;
+
+    width: 1800px;
+    height: 900px;
+
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+
+    z-index: 1;
+}
+:root{
+    --space1Cards: 1;
+    --space3Cards: 1;
+    --space4Cards: 1;
+    --space5Cards: 1;
+    --space7Cards: 1;
+}
+.space{
+    width: 600px;
+    height: 300px;
+}
+#space0{
+    background-size: cover;
+}
+#space1{
+    background-size: cover;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(var(--space1Cards), 1fr);
+}
+#space2{
+    background-size: cover;
+}
+#space3{
+    background-size: cover;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(var(--space3Cards), 1fr);
+}
+#space4{
+    background-size: cover;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(var(--space4Cards), 1fr);
+}
+#space5{
+    background-size: cover;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(var(--space5Cards), 1fr);
+}
+#space6{
+    background-size: cover;
+}
+#space7{
+    background-size: cover;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(var(--space7Cards), 1fr);
+}
+#space8{
+    background-size: cover;
+}
+#ppButtonContainer{
+    width: 300px;
+    height: 300px;
+
+    float: right;
+}
+.ppButton{
+    background-color: #6B584B;
+    width: 200px;
+    height: 60px;
+
+    color: #dee4e8;
+    font-family: "Arsenal";
+    font-size: 40px;
+    font-weight: 700;
+
+    border: #4D3F36 solid;
+    border-width: 3px;
+}
+.ppButton:active{
+    transform: translateY(3px);
+    transition-duration: 0.2s;
+}
+#playButton{
+    margin-top: 54px;
+}
+#passButton{
+    margin-top: 12px;
+}
+
+/* extra screens */
+#startScreenContainer{
+    display: flex;
+    justify-content: center;
+}
+#startScreen{
+    width: 1800px;
+    height: 0px;
+    margin: auto;
+    position: fixed;
+    overflow-y: hidden;
+
+    z-index: 3;
+
+    transition: 0.5s;
+}
+#startButton{
+    width: 440px;
+    height: 80px;
+
+    margin-top: 40px;
+
+    padding: 0;
+    border: #4D3F36 solid;
+    border-width: 3px;
+    border-radius: 6px;
+
+    background-color: #6B584B;
+    color: #dee4e8;
+    font-family: "Arsenal";
+    font-size: 40px;
+    font-weight: 700;
+}
+#startButton:active{
+    transform: translateY(5px);
+    transition-duration: 0.2s;
+}
+
+#resultScreenContainer{
+    display: flex;
+    justify-content: center;
+}
+#resultScreen{
+    width: 1800px;
+    height: 0px;
+    position: fixed;
+    overflow-y: hidden;
+    z-index: 3;
+    
+    transition: 0.5s;
+}
+#restartButton{
+    width: 440px;
+    height: 80px;
+
+    margin-top: 40px;
+
+    padding: 0;
+    border: #4D3F36 solid;
+    border-width: 3px;
+    border-radius: 6px;
+
+    background-color: #6B584B;
+    color: #dee4e8;
+    font-family: "Arsenal";
+    font-size: 40px;
+    font-weight: 700;
+}
+#restartButton:active{
+    transform: translateY(5px);
+    transition-duration: 0.2s;
+}
+
+/* background color test stuff */
+body{
+    opacity: 1;
+}
+#field{
+    background-color: #669986;
+}
+#space0{
+    background-color: #0000aa;
+}
+#space1{
+    background-color: #8000aa;
+}
+#space2{
+    background-color: #ff00aa;
+}
+#space3{
+    background-color: #0080aa;
+}
+#space4{
+    background-color: #8080aa;
+}
+#space5{
+    background-color: #ff80aa;
+}
+#space6{
+    background-color: #00ffaa;
+}
+#space7{
+    background-color: #80ffaa;
+}
+#space8{
+    background-color: #ffffaa;
+}
+#ppButtonContainer{
+    background-color: #AAAAFF;
+}
+#startScreen{
+    background-color: #df2d20;
+}
+#resultScreen{
+    background-color: #20D2DF;
+}
