@@ -195,21 +195,20 @@ function addSatelite(primary,name,colour,M,R,SMA,E,D){
 };
 
 
-// //star system 
-// // the star
-// star = new Body('Star','yellow',2.232*10**30,7.435*10**8,new Vector(0,0),new Vector(0,0))
-// bodies.push(star)
+//star system 
+// the star
+star = new Body('Star','yellow',2.232*10**30,7.435*10**8,new Vector(0,0),new Vector(0,0))
+bodies.push(star)
 
+let massH1 = 4.018*10**24
+let radH1 = 5.682*10**6
+let SMAH1 = 2.473*10**11
+let eccH1 = 0.0255
+let dirH1 = true
 
-// let massH1 = 4.018*10**24
-// let radH1 = 5.682*10**6
-// let SMAH1 = 2.473*10**11
-// let eccH1 = 0.0255
-// let dirH1 = true
-
-// addSatelite(star,'H1','green',massH1,radH1,SMAH1,eccH1,dirH1)
-// H1 = bodies[1]
-// H1.tracing = true
+addSatelite(star,'H1','green',massH1,radH1,SMAH1,eccH1,dirH1)
+H1 = bodies[1]
+H1.tracing = true
 
 
 // //solar system 
@@ -222,38 +221,38 @@ function addSatelite(primary,name,colour,M,R,SMA,E,D){
 // addSatelite('Saturn','orange',5.6834*10**26,58232*10**3,1.43353*10**9,0.0565,true,9.292*10**8)
 
 
-// H1 planet-moon system
-let massH1 = 4.018*10**24
-let radH1 = 5.682*10**6
-let SMAH1 = 2.473*10**11
-let eccH1 = 0.01
-let dirH1 = true
+// // H1 planet-moon system
+// let massH1 = 4.018*10**24
+// let radH1 = 5.682*10**6
+// let SMAH1 = 2.473*10**11
+// let eccH1 = 0.01
+// let dirH1 = true
 
-H1 = new Body('H1','Green',massH1,radH1,new Vector(0,0),new Vector(0,0))
-bodies.push(H1)
+// H1 = new Body('H1','Green',massH1,radH1,new Vector(0,0),new Vector(0,0))
+// bodies.push(H1)
 
-let c = 0.02
-let SMAmoons = 3*10**8
-let eccMoons = 0.05
+// let c = 0.02
+// let SMAmoons = 3*10**8
+// let eccMoons = 0.05
 
-let M1 = 1.9*10**21
-let R1 = 1.1*10**6
-let P1init = new Vector(H1.P.x+(1-c)*SMAmoons*(1+eccMoons**2),H1.P.y)
-let V1init = new Vector(0,(1-c)*Math.sqrt(G*H1.M / SMAmoons))
+// let M1 = 1.9*10**21
+// let R1 = 1.1*10**6
+// let P1init = new Vector(H1.P.x+(1-c)*SMAmoons*(1+eccMoons**2),H1.P.y)
+// let V1init = new Vector(0,(1-c)*Math.sqrt(G*H1.M / SMAmoons))
 
-moon1 = new Body('moon1','Red',M1,R1,P1init,V1init)
-bodies.push(moon1)
+// moon1 = new Body('moon1','Red',M1,R1,P1init,V1init)
+// bodies.push(moon1)
 
-let M2 = 5.3*10**20
-let R2 = 0.9*10**6
-let P2init = new Vector(H1.P.x+(1+c)*SMAmoons*(1+eccMoons**2),H1.P.y)
-let V2init = new Vector(0,(1+c)*Math.sqrt(G*H1.M / SMAmoons))
+// let M2 = 5.3*10**20
+// let R2 = 0.9*10**6
+// let P2init = new Vector(H1.P.x+(1+c)*SMAmoons*(1+eccMoons**2),H1.P.y)
+// let V2init = new Vector(0,(1+c)*Math.sqrt(G*H1.M / SMAmoons))
 
-moon2 = new Body('moon2','Yellow',M2,R2,P2init,V2init)
-bodies.push(moon2)
+// moon2 = new Body('moon2','Yellow',M2,R2,P2init,V2init)
+// bodies.push(moon2)
 
-moon1.tracing = true
-moon2.tracing = true
+// moon1.tracing = true
+// moon2.tracing = true
 
 // adjust scale
 var bodyNr = bodies.length;
